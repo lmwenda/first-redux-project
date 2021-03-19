@@ -13,6 +13,7 @@ function App() {
       {isLogged === true ? (
         <div>
           <h1>Counter: {counter}</h1>
+          <h3>Refresh the Page to Reset your Data.</h3>
           <button onClick={() => dispatch(increment())}>+</button>
           <button onClick={() => dispatch(decrement())}>-</button>
           <button onClick={() => dispatch(logout())}>LOGOUT</button>
@@ -20,6 +21,7 @@ function App() {
       ) : (
         <div>
           <h1>Signin to see your Redux Counter.</h1>
+          <h3>Refresh the Page to Reset your Data.</h3>
           <button onClick={() => dispatch(login())}>LOGIN</button>
         </div>
       )}
